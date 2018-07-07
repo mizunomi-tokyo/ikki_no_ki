@@ -53,14 +53,14 @@ def hikikaekendasu(num):
     ser.write(chr(0x1B)) # 0x1B
     ser.write(chr(0x57)) # 0x57
     ser.write(chr(0x01)) # 0x00 or 01
-    ser.write("引換券\r\r")
+    ser.write("引換券")
     ser.write(chr(0x1B)) # 0x1B
     ser.write(chr(0x57)) # 0x57
     ser.write(chr(0x00)) # 0x00 or 01
 
-    ser.write(" 　　　　　　　数量 1\r\r\r")
+    ser.write(" 　　 　　数量 1\r\r\r")
 
-    ser.write("\r（内注意　２階の物販コーナーへ商品を引き換えに行ってください）\r\r\r")
+    ser.write("\r（２階の物販コーナーへ商品を引き換えに行ってください）\r\r\r")
 
     ser.write(chr(0x1B)) # 0x1B
     ser.write(chr(0x68)) # 0x68
@@ -71,7 +71,7 @@ def hikikaekendasu(num):
     ser.write(chr(0x1B)) # 0x1B
     ser.write(chr(0x6C)) # 0x6C
     ser.write(chr(0x1D)) # 0x00 - 0x2F
-    ser.write("レシート No.00\r")
+    ser.write("レシート No.00")
     ser.write(num)
     ser.write("\r")
     ser.write(chr(0x1B)) # 0x1B
@@ -93,7 +93,7 @@ def hikikaekendasu(num):
     ser.write(chr(0x1B)) # 0x1B
     ser.write(chr(0x6C)) # 0x6C
     ser.write(chr(0x0C)) # 0x00 - 0x2F
-    ser.write("\rmizunomi.tokyo\r\r")
+    ser.write("mizunomi.tokyo\r\r")
 
     # Barcode Print
     # ser.write(chr(0x1D))
