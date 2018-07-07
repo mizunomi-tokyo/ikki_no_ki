@@ -108,7 +108,7 @@ def hikikaekendasu(num):
 
     ser.write(chr(0x1B)) # 0x1B
     ser.write(chr(0x6C)) # 0x6C
-    ser.write(chr(0x1C)) # 0x00 - 0x2F
+    ser.write(chr(0x13)) # 0x00 - 0x2F
     # QRcode Print
     ser.write(chr(0x1D))
     ser.write(chr(0x79))
