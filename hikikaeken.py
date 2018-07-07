@@ -78,7 +78,7 @@ def hikikaekendasu(num):
     ser.write(chr(0x1B)) # 0x1B
     ser.write(chr(0x6C)) # 0x6C
     ser.write(chr(0x1D)) # 0x00 - 0x2F
-    ser.write("レシート No.012\r")
+    ser.write("レシート No.0\r")
     ser.write(num)
     ser.write("\r")
     ser.write(chr(0x1B)) # 0x1B
