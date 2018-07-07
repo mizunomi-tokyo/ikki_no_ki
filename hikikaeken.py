@@ -40,7 +40,7 @@ def hikikaekendasu(num):
 
     ser.write(chr(0x1B)) # 0x1B
     ser.write(chr(0x6C)) # 0x6C
-    ser.write(chr(0x22)) # 0x00 - 0x2F
+    ser.write(chr(0x16)) # 0x00 - 0x2F
     ser.write("水呑百姓東京\r\r\r\r")
 
     ser.write(chr(0x1B)) # 0x1B
@@ -62,7 +62,7 @@ def hikikaekendasu(num):
     ser.write(chr(0x1C)) # 0x1C
     ser.write(chr(0x57)) # 0x57
     ser.write(chr(0x01)) # 0x00 or 01
-    ser.write(ohgoe)
+    # ser.write(ohgoe)
     ser.write(chr(0x1C)) # 0x1C
     ser.write(chr(0x57)) # 0x57
     ser.write(chr(0x00)) # 0x00 or 01
@@ -78,7 +78,7 @@ def hikikaekendasu(num):
     ser.write(chr(0x1B)) # 0x1B
     ser.write(chr(0x6C)) # 0x6C
     ser.write(chr(0x1D)) # 0x00 - 0x2F
-    ser.write("レシート No.0\r")
+    ser.write("レシート No.0")
     ser.write(num)
     ser.write("\r")
     ser.write(chr(0x1B)) # 0x1B
